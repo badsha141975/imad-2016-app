@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 var counter=0;                       //Initialise Counter
 app.get('/counter',function(req,res){
     counter=counter+1;               //Increment Counter
-    res.send(counter.tostring());      //Convert No counter into string counter.
+    res.send(counter.toString());      //Convert No counter into string counter.
 });
 app.get('/article-one',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
