@@ -1,5 +1,5 @@
 //Code of Counter
-var button=ducument.getElementByid('counter'); // Select our button
+var button=ducument.getElementById('counter'); // Select our button
 
 //When the button is clicked, let us attach a function to it which should 
 //first make a request to the counter end pt, capture response and store it in a var.
@@ -7,6 +7,6 @@ var button=ducument.getElementByid('counter'); // Select our button
 var counter=0;
 var onclick=function() {
 counter=counter+1;
-var span=document.getElementbyId("count");
+var span=document.getElementbyId('count');
 span.innerHTML=counter.tostring();
 }
