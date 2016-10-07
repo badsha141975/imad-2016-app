@@ -6,7 +6,8 @@ var button = ducument.getElementById('counter'); // Select our button
 //The var should be rendered in the correct span. Let's do this(pt 5) first
 var counter = 0;
 button.onclick = function() {
+    var request=newXMLHttpRequest();
 counter = counter+1;
-var span=document.getElementbyId('counter');
+var span=document.getElementById('counter');
 span.innerHTML = counter.toString();
 };
